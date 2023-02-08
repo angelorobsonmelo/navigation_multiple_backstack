@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/about_nav_graph"
+    app:startDestination="@id/aboutFragment">
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.angelorobson.multiplebackstacks.presentation.about.AboutFragment"
+        android:label="@string/about_title"
+        tools:layout="@layout/fragment_about">
+        <action
+            android:id="@+id/action_to_aboutDetailsFragment"
+            app:destination="@id/aboutDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutDetailsFragment"
+        android:name="com.angelorobson.multiplebackstacks.presentation.about.AboutDetailsFragment"
+        android:label="@string/about_details_title"
+        tools:layout="@layout/fragment_about_details" />
+</navigation>
